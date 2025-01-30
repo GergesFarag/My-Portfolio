@@ -120,7 +120,7 @@ span {
   .landing-parent{
     overflow: hidden;
     padding: 0;
-    height: 42rem;
+    height: 100vh;
   }
   .person-img{
     width: 20rem;
