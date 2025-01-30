@@ -157,7 +157,7 @@ span {
   }
   @media screen and (min-height: 700px) and (max-height: 920px) {
     .landing-parent{
-      height: 85vh;
+      height: 93vh;
     }
     .cv-button{
       top:1rem;
