@@ -1,5 +1,5 @@
 * {
-    color: white;
+    color: rgb(235, 235, 235);
   }
   
   .about-parent {
@@ -35,8 +35,8 @@
   .floating-content {
     position: relative;
     left: -9.375rem;
+    height: 15rem;
   }
-  
   .floating-content h1 {
     font-family: 'MADE Outer Sans Alt', sans-serif;
     text-transform: uppercase;

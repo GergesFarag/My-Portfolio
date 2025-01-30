@@ -47,8 +47,8 @@
     }
     .skill .left{
         width:auto;
-        text-align: start;
-        justify-content: start;
+        text-align: center;
+        justify-content: center;
     }
     .skill .left h4{
         font-size: medium;
