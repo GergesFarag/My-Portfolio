@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+:root{
+    --main-color: #d018b7;
+    --second-color: #6908a4;
+    --third-color: #3121a0;
+}
+::-webkit-scrollbar{
+    background-color: #07000c;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+    opacity: 0.5;
+}

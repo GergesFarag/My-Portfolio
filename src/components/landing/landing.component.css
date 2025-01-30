@@ -1,0 +1,157 @@
+* {
+  color: white;
+  text-transform: uppercase;
+}
+
+.landing-parent {
+  height: 100vh;
+  background: url("/bg1.jpg") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.left-content {
+  padding: 2rem;
+  text-align: center;
+  z-index: 5;
+}
+
+.right-content {
+  padding: 1rem;
+  height: 100%;
+  position: relative;
+}
+.code-img{
+  width: 50rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: translate(50%, -50%);
+  opacity: 0.3;
+  z-index: 0;
+}
+.person-img {
+  width: 25rem;
+  height: auto;
+  position: absolute;
+  top: 4rem;
+  right: 8rem;
+}
+h3 {
+  font-family: "MADE Outer Sans Alt", sans-serif;
+  font-weight: 300;
+  text-align: start;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+h1 {
+  font-family: "MADE Outer Sans Alt", sans-serif;
+  text-transform: capitalize;
+  font-size: 6rem;
+  width: 31.25rem;
+  text-align: start;
+  background: linear-gradient(45deg, white, white, grey);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 3;
+}
+
+p {
+  font-weight: 300;
+  width: 20rem;
+  font-size: 1.25rem;
+  opacity: 0.8;
+  text-align: start;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1.25rem;
+  width: 0.25rem;
+  height: 100%;
+  background-color: white;
+}
+
+.cv-button {
+  all: unset;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 6rem;
+  right: 6rem;
+  border: 0.3rem solid #e14eca;
+  font-size: 1.25rem;
+  transition: 0.5s ease;
+}
+
+a {
+  all: unset;
+}
+
+.cv-button:hover {
+  background-color: #7d106e;
+  cursor: pointer;
+}
+
+span {
+  text-transform: capitalize;
+  background: linear-gradient(45deg, var(--main-color), var(--third-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 780px){
+  .landing-parent{
+    overflow: hidden;
+    padding: 0;
+  }
+  .person-img{
+    width: 20rem;
+    top:-12rem;
+    right: -3rem;
+  }
+  .content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-content{
+    padding: 3rem;
+  }
+  p {
+    width: 12rem;
+  }
+  h1{
+    font-size: 4rem;
+    width: auto;
+  }
+  .cv-button{
+    top: 1rem;
+    left: 2rem;
+    width: 7rem;
+    height: 7rem;
+    font-size: 1rem;
+  }
+  .code-img{
+    width: 20rem;
+    height: auto;
+    top: 35rem;
+    left: -10rem;
+  }
+}

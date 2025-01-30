@@ -1,0 +1,18 @@
+<div class="projects-parent section" id="projects">
+  <div class="head-content container text-center py-5">
+    <h1>My Projects</h1>
+  </div>
+  <div class="content container">
+    <div class="content-data row">
+      <div *ngFor="let project of projects" class="project-item col-12 col-md-4 mb-5">
+        <app-project
+          class="d-flex justify-content-center align-items-center"
+          [projectTitle]="project.title"
+          [projectImage]="project.thumbnail"
+          [projectDate]="project.date"
+          [githubLink]="project.githubLink"
+        ></app-project>
+      </div>
+    </div>
+  </div>
+</div>

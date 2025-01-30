@@ -1,0 +1,32 @@
+.nav-parent{
+    display: flex;
+    width: 50px;
+    position: fixed;
+    top:50%;
+    left:10px;
+    transform: translateY(-50%);
+    background-color: #000433;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    border-radius:60px;
+}
+.content .nav-item{
+    padding: 15px;
+}
+.content .nav-item a i{
+    font-size: 15px;
+}
+.active{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    transition: 1s ease;
+    padding: 10px;
+}
+.active.first{
+    border-radius: 50% 50% 20% 20%;
+}
+.active.last{
+    border-radius: 20% 20% 50% 50%;
+}

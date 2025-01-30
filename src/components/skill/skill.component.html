@@ -1,0 +1,11 @@
+<div class="skill">
+    <div class="left d-flex">
+        <i [className]="skillClass"></i>
+        <h4>{{skillName}}</h4>
+    </div>
+    <div class="right">
+        <div class="bullets d-flex">
+            <div *ngFor="let bullet of range;let i = index" class="bullet" [class.pass]="i < skillLevel"></div>
+        </div>
+    </div>
+</div>

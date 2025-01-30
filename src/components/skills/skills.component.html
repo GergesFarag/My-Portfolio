@@ -1,0 +1,19 @@
+<div class="skills-parent section" id="skills">
+  <div class="head-content container">
+    <h1>My Skills</h1>
+  </div>
+  <div class="content container row">
+    @for(skill of skills; track skill){
+    <div class="skill-item row col-12 col-md-6 ">
+      <app-skill
+        [skillName]="skill.name"
+        [skillLevel]="skill.level"
+        [skillClass]="skill.class"
+      ></app-skill>
+    </div>
+    @if($index % 2 != 0){
+        <hr>
+    }
+    }
+  </div>
+</div>

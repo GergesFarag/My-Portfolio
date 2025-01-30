@@ -1,0 +1,48 @@
+.projects-parent {
+    background: url('/projects-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: aliceblue;
+    padding-top: 5rem;
+  }
+  
+  .head-content {
+    font-family: 'MADE Outer Sans Alt', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1.875rem;
+  }
+  
+  .head-content h1 {
+    font-size: 4.375rem;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+  }
+  
+  .content-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-item {
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 767px) {
+    .head-content h1 {
+      font-size: 3rem;
+    }
+  
+    .project-item {
+      width: 100%;
+    }
+  }
+  

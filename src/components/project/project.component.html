@@ -1,0 +1,18 @@
+<div
+  class="project d-flex flex-column flex-md-row align-items-center justify-content-center"
+>
+  <div class="date position-relative mb-3 mb-md-0">
+    <h4>{{ projectDate }}</h4>
+  </div>
+  <a [href]="githubLink" target="_blank">
+    <div class="data position-relative d-flex justify-center align-center">
+      <img [src]="projectImage" alt="" class="img-fluid" loading="lazy" />
+      <div
+        class="title d-flex justify-center align-center flex-column position-absolute"
+      >
+        <h2>{{ projectTitle }}</h2>
+        <i class="fa-solid fa-arrow-right fs-2"></i>
+      </div>
+    </div>
+  </a>
+</div>

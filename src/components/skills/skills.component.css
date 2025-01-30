@@ -1,0 +1,46 @@
+.skills-parent {
+  background: url("/skills-bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  padding-block: 20px;
+  color: rgb(239, 239, 239);
+  overflow: hidden;
+}
+.content {
+  width: 100%;
+  text-align: center;
+  margin-inline: auto;
+}
+.head-content {
+  font-family: "MADE Outer Sans Alt", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+}
+.head-content h1 {
+  font-size: 85px;
+}
+.skill-item {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+@media screen and (max-width: 500px) {
+  .content-data {
+    flex-direction: column;
+  }
+  .content{
+    padding: 0;
+    margin: 0;
+  }
+  .head-content h1{
+    font-size: 4rem;
+  }
+  .skill-item{
+    padding: 0;
+  }
+}
