@@ -21,25 +21,19 @@ export class NavComponent implements OnInit, OnDestroy {
     this.setupSectionsObserver();
   }
 
-  ngOnDestroy(): void {
-    // Clean up the observer to avoid memory leaks
-    this.observer.disconnect();
-  }
-
+  
   setupSectionsObserver(): void {
-    // Target all the section elements
+
     const sections = document.querySelectorAll('.section');
     sections.forEach((section) => {
-      this.observer.observe(section); // Observe each section for visibility
+      this.observer.observe(section); 
     });
   }
-
+  
   onIntersection(entries: IntersectionObserverEntry[]): void {
     entries.forEach((entry) => {
       const navs = document.querySelectorAll('.nav-item a');
       const index = Array.from(document.querySelectorAll('.section')).indexOf(entry.target);
-
-      // When the section is in view, add 'active' class to corresponding nav item
       if (entry.isIntersecting) {
         navs.forEach((nav) => this.removeActive(nav));
         if (navs[index]) {
@@ -48,12 +42,15 @@ export class NavComponent implements OnInit, OnDestroy {
       }
     });
   }
-
+  
   addActive(nav: Element): void {
     nav.classList.toggle('active');
   }
-
+  
   removeActive(nav: Element): void {
     nav.classList.remove('active');
+  }
+  ngOnDestroy(): void {
+    this.observer.disconnect();
   }
 }
