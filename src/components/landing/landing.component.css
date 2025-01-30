@@ -139,7 +139,7 @@ span {
     width: 12rem;
   }
   h1{
-    font-size: 4rem;
+    font-size: 3.7rem;
     width: auto;
   }
   .cv-button{
@@ -154,5 +154,13 @@ span {
     height: auto;
     top: 35rem;
     left: -10rem;
+  }
+  @media screen and (min-height: 700px) and (max-height: 920px) {
+    .landing-parent{
+      height: 85vh;
+    }
+    .cv-button{
+      top:1rem;
+    }
   }
 }
