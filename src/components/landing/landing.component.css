@@ -123,7 +123,7 @@ span {
   }
   .person-img{
     width: 20rem;
-    top:-12rem;
+    top:-10rem;
     right: -3rem;
   }
   .content{
@@ -142,7 +142,7 @@ span {
     width: auto;
   }
   .cv-button{
-    top: 1rem;
+    top: 3rem;
     left: 2rem;
     width: 7rem;
     height: 7rem;
