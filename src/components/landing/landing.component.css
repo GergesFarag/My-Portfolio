@@ -120,7 +120,6 @@ span {
   .landing-parent{
     overflow: hidden;
     padding: 0;
-    height: 100vh;
   }
   .person-img{
     width: 20rem;
@@ -143,7 +142,7 @@ span {
     width: auto;
   }
   .cv-button{
-    top: 3.9rem;
+    top: 3.8rem;
     left: 2rem;
     width: 7rem;
     height: 7rem;

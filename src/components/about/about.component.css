@@ -84,6 +84,9 @@
   }
   
   @media screen and (max-width: 500px) {
+    .about-parent{
+      height: 100%;
+    }
     .content {
       flex-direction: column;
       align-items: center;
