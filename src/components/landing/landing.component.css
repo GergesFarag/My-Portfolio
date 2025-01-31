@@ -96,9 +96,21 @@ p::before {
   position: absolute;
   bottom: 6rem;
   right: 6rem;
-  border: 0.3rem solid #e14eca;
+  border: 0.5rem solid rgba(254, 132, 236,0.7);
   font-size: 1.25rem;
   transition: 0.5s ease;
+  z-index: 2;
+}
+.cv-button::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  border: 1rem solid rgba(225, 78, 202,0.8);
+  border-radius: 50%;
+  z-index: -2;
 }
 
 a {
@@ -106,7 +118,7 @@ a {
 }
 
 .cv-button:hover {
-  background-color: #7d106e;
+  background-color: #a91696;
   cursor: pointer;
 }
 
